@@ -1,0 +1,219 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+  }
+  
+  
+  /* Header 樣式 */
+  header {
+  background-color: #a54427;
+  color: green;
+  padding: 2rem 0;
+  height: 100px;
+  }
+  
+  .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 3rem;
+  color: #42563b;
+  font-family: "Sawarabi Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  
+  .nav-left, .nav-right{
+  display: flex;
+  align-items: center;
+  }
+  
+  .nav-right{
+  justify-content: flex-start;
+  }
+  
+  .nav-left a, .nav-right a{
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  }
+  
+  .store-name {
+  font-size: 3rem;
+  margin: 0;
+  font-family:"Dela Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  }
+  
+  .store-name a{
+    color: white; /* 修改為你想要的顏色，例如黑色可以用 #000 或 black */
+    text-decoration: none; /* 去掉底線（可選） */
+  }
+  
+  /* 下拉選單容器 */
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  
+  /* 隱藏的下拉內容 */
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  }
+  
+  /* 下拉選項的樣式 */
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: #f1f1f1;
+  }
+  
+  /* 顯示下拉內容 */
+  .show {
+  display: block;
+  }
+  
+  .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  }
+  
+  .member a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  }
+  
+  /* Banner 樣式 */
+  * {
+  box-sizing: border-box;
+  }
+
+/* 頁面標題樣式 */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 收藏商品容器 */
+#wishlist-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    padding: 20px;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+/* 每個收藏商品的樣式 */
+.wishlist-item {
+    background-color: white; /* 透明背景 */
+    border: none; /* 無邊框 */
+    border-radius: 0; /* 無圓角 */
+    box-shadow: none; /* 無陰影 */
+    text-align: center;
+    padding: 0; /* 無額外填充 */
+    width: 200px;
+}
+
+
+/* 商品圖片樣式 */
+.wishlist-item-image {
+    width: 85%;
+    max-width: 100%;
+    height: 150px;
+  
+    padding-top: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+
+
+
+
+/* 商品名稱 */
+.wishlist-item-name {
+    font-size: 16px;
+    font-weight: bold;
+  
+}
+
+/* 商品價格 */
+.wishlist-item-price {
+    font-size: 14px;
+    color: #888;
+}
+
+/* 調整移除按鈕樣式 */
+.wishlist-item button {
+    background-color: #e74c3c; /* 紅色背景 */
+    color: white; /* 按鈕文字顏色 */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px; /* 與內容的間距 */
+    position: relative; /* 方便定位調整 */
+    top: -10px; /* 向上移動按鈕 */
+    transition: background-color 0.3s ease;
+}
+
+.wishlist-item button:hover {
+    background-color: #c0392b; /* 按鈕懸停時的顏色 */
+}
+
+.wishlist-item-link {
+    display: block;
+    text-decoration: none; /* 去除鏈接底線 */
+    color: inherit; /* 繼承父元素的文字顏色 */
+}
+
+.wishlist-item-link:hover .wishlist-item {
+    transform: translateY(-5px); /* 滑鼠懸停時，商品輕微上移 */
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e7d2ba;
+    color: #5c4534;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #5c4534;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

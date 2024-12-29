@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(image/photo10.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #333;
+    
+}
+header {
+    background-color: #a54427;
+    color: green;
+    padding: 2rem 0;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 3rem;
+    color: #42563b;
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .nav-right{
+    justify-content: flex-start;
+  }
+  
+  .nav-left a, .nav-right a{
+    color: white;
+    text-decoration: none;
+    margin: 0.1rem;
+    padding-right: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .store-name {
+    font-size: 3rem;
+    margin: 0;
+    font-family:"Dela Gothic One", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .store-name a{
+    color: white; /* 修改為你想要的顏色，例如黑色可以用 #000 或 black */
+    text-decoration: none; /* 去掉底線（可選） */
+  }
+
+
+  #wishlist-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+#heart-icon {
+    color: #ccc;
+}
+
+#wishlist-count {
+    border-radius: 50%;
+    margin-top: 2px;
+    font-weight: bold;
+}
+      /* 下拉選單容器 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* 隱藏的下拉內容 */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* 下拉選項的樣式 */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* 顯示下拉內容 */
+  .show {
+    display: block;
+  }
+
+
+
+
+
+#product-heart-icon {
+    color: #ccc;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+
+
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 圖片區域 1: 介紹區域 2 */
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 ;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.share-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 10px; /* 在商品名稱和分享器之間留一點空間 */
+}
+
+.share-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* 水平排列分享圖標 */
+    gap: 10px; /* 圖標之間的間隔 */
+}
+
+.share-options button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.share-options button:hover {
+    background: #f1f1f1;
+}
+
+#share-icon:hover + .share-options {
+    display: flex; /* 顯示選項，並水平排列 */
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* 當鼠標懸停時放大 */
+}
+
+.price {
+    font-size: 20px;
+    color: #5c4534;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+.stock-info {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.product-additional-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.product-additional-info p {
+    margin: 5px 0;
+}
+
+label {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+#quantity {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#add-to-cart {
+    transition: background-color 0.3s ease;
+}
+
+#add-to-cart:hover {
+    background-color: #48372c;
+}
+
+/* Footer 整體樣式 */
+footer {
+    background-color: #a54427; /* Footer 背景顏色 */
+    padding: 20px; /* Footer 整體的內邊距 */
+  }
+  
+  /* Footer 主要內容容器 */
+  .footer-container {
+    display: flex; /* 使用 Flex 排版 */
+    align-items: center; /* 垂直居中對齊 */
+    justify-content: center; /* 水平居中 */
+    margin-bottom: 10px; /* 與底部部分的間距 */
+    position: relative; /* 確保定位有效 */
+  }
+  
+  /* Footer 圖片樣式 */
+  .footer-item img {
+    max-width: 100px; /* 圖片最大寬度 */
+    height: auto; /* 確保圖片等比例縮放 */
+    position: absolute; /* 絕對定位讓圖片保持靠左 */
+    left: 20px; /* 與左邊距離 */
+    top: 50%; /* 垂直置中 */
+    transform: translateY(-50%); /* 修正垂直居中的偏移 */
+  }
+  
+  /* Footer 文字容器 */
+  .footer-item .text-container {
+    margin-left: 150px; /* 為了讓文字不被圖片覆蓋，增加左邊距 */
+    text-align: left; /* 文字靠左對齊 */
+    line-height: 1.6; /* 行間距 */
+    max-width: 600px; /* 限制文字容器的最大寬度 */
+  }
+  
+  /* Footer 文字樣式 */
+  .footer-item .text-container p {
+    margin: 5px 0; /* 每段文字的上下間距 */
+    font-size: 14px; /* 文字大小 */
+    color: #333; /* 文字顏色 */
+  }
+  
+  /* Footer 底部獨立部分 */
+  .footer-bottom {
+    background-color:#42563b; /* 底部背景顏色 */
+    text-align: center; /* 內容水平置中 */
+    padding: 10px 0; /* 上下內邊距 */
+    margin-top: 10px; /* 與上方內容的間距 */
+  }
+  
+  .footer-bottom p {
+    margin: 0; /* 移除多餘外邊距 */
+    font-size: 14px; /* 文字大小 */
+    font-weight: bold; /* 字體加粗 */
+    color: #000; /* 文字顏色 */
+  }
+  
